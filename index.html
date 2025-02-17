@@ -91,17 +91,24 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/reponsive.css">
     </head>
     <body>
         <header class="fixed-header">
             <div class="content">
                 <nav class="navbar">
+                    <!-- Table & mobile menu -->
+                     <label for="menu-checkbox" class="toggle-menu">
+                        <i class="fa-solid fa-bars"></i>
+                     </label>
+
                     <!-- Logo -->
-                    <a href="#"
-                        ><img src="./assets/image/logo.svg" alt="Besnik."
-                    /></a>
+                    <a href="#">
+                        <img src="./assets/image/logo.svg" alt="Besnik." class="logo"/>
+                    </a>
                     <!-- Navigation -->
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -118,6 +125,28 @@
                 </nav>
             </div>
         </header>
+
+        <!-- Table/Mobile header -->
+        <header class="mobile-header">
+            <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="menu-drawer">
+                <a href="#">
+                    <img src="./assets/image/logo.svg" alt="Besnik."/>
+                </a>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="hide-on-table separate"><a href="#!">Sign in</a></li>
+                    <li class="hide-on-table"><a href="#!">Sign up</a></li>
+                </ul>
+            </div>
+        </header>
+
         <main>
             <!-- Hero-->
             <div class="hero-wrap">
@@ -163,7 +192,7 @@
                         <p class="desc">
                             More than 45,000+ companies trust besnik
                         </p>
-                        <p class="desc">5 Star Ratings (2k+ Review)</p>
+                        <p class="desc hide-on-mobile">5 Star Ratings (2k+ Review)</p>
                     </div>
                     <div class="images">
                         <a href="#!">
@@ -409,6 +438,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="view-all show-on-mobile">
+                        <a href="#!" class="btn">View All Properties</a>
                     </div>
                 </div>
             </div>

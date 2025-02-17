@@ -357,10 +357,12 @@ a {
 }
 
 .featured .item .title a {
+    display: block;
     color: #000339;
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.5;
+    height: 3em;
 }
 
 .featured .item .desc {
@@ -371,6 +373,7 @@ a {
     font-weight: 500;
     line-height: 1.5;
     word-break: break-all;
+    height: 4.5em;
 }
 
 .featured .item .info {
@@ -614,7 +617,7 @@ a {
 }
 
 .footer .row-top {
-    gap: 185px;
+    column-gap: 185px;
 }
 
 .footer .heading {
